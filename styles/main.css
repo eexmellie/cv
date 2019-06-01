@@ -1,0 +1,187 @@
+.about {
+  text-align: center;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__caption {
+  text-align: center;
+}
+
+.about__name {
+  margin-bottom: 0.5em;
+
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.about__profession {
+  display: block;
+
+  font-style: italic;
+  font-weight: 700;
+  font-family: "PT Serif", "Georgia", serif;
+  color: #bfbfbf;
+}
+
+.about__photo-wrap {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 1.5em;
+  
+  border-radius: 9999px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  
+  text-decoration: none;
+  color: inherit;
+
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.contacts__icon {
+  width: calc(24px + 4em);
+  height: calc(24px + 1em);
+  padding: 0.5em 2em;
+  
+  fill: #3f3f3f;
+}
+
+.contacts__method:hover {
+  color: #408ffb;
+}
+
+.contacts__method:hover .contacts__icon {
+  fill: #408ffb;
+}
+
+.contacts__icon-wrap {
+  position: relative;
+  margin-right: auto;
+}
+
+.contacts__icon-wrap::after {
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  bottom: 0.5em;
+  
+  display: block;
+  width: 2px;
+  content: "";
+
+  background-color: #e5e5e5;
+}
+
+.contacts__character {
+  text-align: justify;
+}
+
+.skills__content {
+  columns: 2;
+  overflow: hidden;
+}
+
+.skills__set {
+  break-inside: avoid-column;
+}
+
+.skills__list {
+  margin-bottom: 1rem;
+}
+
+.skills__item {
+  line-height: 1.6;
+}
+
+.occupation__list {
+  position: relative;
+  margin-bottom: 1.87rem;
+}
+
+.occupation__list::before {
+  position: absolute;
+  top: 0.7em;
+  bottom: 0;
+  left: 80px;
+  
+  display: block;
+  content: "";
+  width: 1px;
+
+  background-color: #3f3f3f;
+}
+
+.occupation__entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.occupation__entry:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.occupation__period {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  
+  text-align: center;
+}
+
+.occupation__period::after {
+  position: absolute;
+  top: 0.7em;
+  right: -15px;
+  transform: translateY(-50%);
+
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  
+  line-height: 1;
+  
+  background-color: #3f3f3f;
+  border-radius: 100%;
+}
+
+.period__from,
+.period__to {
+  display: block;
+}
+
+.occupation__description {
+  width: 70%;
+}
+
+.occupation__position {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.occupation__company {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "PT Serif", "Georgia", serif;
+  color: #3f3f3f;
+}
